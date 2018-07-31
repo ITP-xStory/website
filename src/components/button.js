@@ -2,19 +2,20 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const Button = ({ text }) => (
-<div>
+  <div>
     <button
-        style={{
+      style={{
         border: '1px solid #000000',
         borderRadius: '5px',
         padding: '13px',
         background: 'transparent',
-        cursor: 'pointer'
-        }}
+        cursor: 'pointer',
+      }}
     >
-    {text}
+      {text}
     </button>
-    <br/><br/>
+    <br />
+    <br />
   </div>
 )
 
