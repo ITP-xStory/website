@@ -52,6 +52,7 @@ exports.createPages = ({boundActionCreators, graphql}) => {
           id
           frontmatter {
             date
+            thumbnail
             path
             title
             excerpt

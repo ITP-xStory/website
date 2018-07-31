@@ -85,9 +85,7 @@ const IndexPage = ({data}) => {
 
 
       {/* Past Projects */}
-      <Section headline='Projects' body='
-      
-      ' />
+      <Section headline='Projects' body='' />
       <div className='fluid-container'>
         <div className='row'>
           {posts.map (({node: post}) => {
