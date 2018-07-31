@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: `https://github.com/ITP-Xstory/website`,
+  pathPrefix: `/website`,
   siteMetadata: {
     title: 'Experiments in Storytelling.',
   },
