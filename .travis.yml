@@ -1,22 +1,26 @@
 sudo: required
 dist: trusty
 
-jobs:
-    include:
-        - stage: build and deploy
-          if: type = pull_request
-          language: node_js
-          node_js:
-            - '6'
-            - '8'
-            - '10'
-          cache:
-            yarn: true
-          before_install:
-          - curl -o- -L https://yarnpkg.com/install.sh | bash
-          - export PATH=$HOME/.yarn/bin:$PATH
-          install:
-          - yarn install
-          script:
-          - yarn run test
+language: node_js
+node_js:
+  - "stable"
+cache:
+  yarn: true
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  local_dir: public
+  keep-history: true
+  on:
+    branch: master
+before_script:
+  - curl -o- -L https://yarnpkg.com/install.sh | bash
+  - export PATH=$HOME/.yarn/bin:$PATH
+  - "yarn global add gatsby"
+  - "yarn install"
+script:
+  - "yarn run format"
+after_success:
+  - "yarn run deploy"
 
