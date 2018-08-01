@@ -8,7 +8,7 @@ const Header = ({ siteTitle }) => (
       marginBottom: '1.45rem',
     }}
   >
-    <div
+    <div id="gl_container"
       style={{
         margin: '0 auto',
         maxWidth: 960,
