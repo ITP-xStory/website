@@ -10,14 +10,14 @@ class Header extends Component {
     super(props)
 
     this.state = {
-      width:  800,
-      height: 182
+      width: 800,
+      height: 182,
     }
 
     this.start = this.start.bind(this)
     this.stop = this.stop.bind(this)
     this.animate = this.animate.bind(this)
-    this.componentDidMount = this.componentDidMount.bind(this);
+    this.componentDidMount = this.componentDidMount.bind(this)
 
     this.modelLoader = new THREE.GLTFLoader()
   }
@@ -46,11 +46,11 @@ class Header extends Component {
     this.renderer.domElement.style.left = 0
     this.renderer.domElement.style.top = 0
 
-    this.modelLoader.load('/website/assets/shiffman.glb', (asset)=>{
+    this.modelLoader.load('/website/assets/shiffman.glb', asset => {
       this.shifmanModel = asset.scene
       console.log(this.shifmanModel)
       this.scene.add(this.shifmanModel)
-    });
+    })
 
     document
       .getElementById('gl_container')
@@ -58,8 +58,8 @@ class Header extends Component {
 
     this.start()
   }
-  
-  onWindowResize(e){
+
+  onWindowResize(e) {
     console.log(e)
   }
 
@@ -81,11 +81,10 @@ class Header extends Component {
   }
 
   animate() {
-
     this.renderScene()
     this.frameId = window.requestAnimationFrame(this.animate)
 
-    if(this.shifmanModel){
+    if (this.shifmanModel) {
       this.shifmanModel.rotation.y += 0.005
     }
   }
@@ -100,7 +99,7 @@ class Header extends Component {
         id="gl_container"
         style={{
           background: 'tranparent',
-          marginBottom: '1.45rem'
+          marginBottom: '1.45rem',
         }}
       >
         <div
@@ -109,7 +108,7 @@ class Header extends Component {
             maxWidth: 960,
             height: '32rem',
             padding: '13rem 1.0875rem',
-            zIndex: 10
+            zIndex: 10,
           }}
         >
           <h1 style={{ margin: 0 }}>
@@ -118,7 +117,7 @@ class Header extends Component {
               style={{
                 color: 'white',
                 textDecoration: 'none',
-                zIndex: 10
+                zIndex: 10,
               }}
             >
               {this.props.siteTitle}
