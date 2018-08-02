@@ -42643,26 +42643,36 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	
 	  Header.prototype.componentDidMount = function componentDidMount() {
-	    var width = 1000;
-	    var height = 700;
+	    var _this2 = this;
+	
+	    var width = window.innerWidth;
+	    var height = 576;
 	
 	    var scene = new THREE.Scene();
 	    var camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
-	    var renderer = new THREE.WebGLRenderer({ alpha: true });
-	
-	    this.modelLoader.load('https://www.dropbox.com/s/wxtzb43cjf02ztf/shiffman.glb?dl=1', function (asset) {
-	      console.log(asset);
-	    });
+	    camera.position.z = 10;
+	    var renderer = new THREE.WebGLRenderer();
+	    var light = new THREE.PointLight(new THREE.Color('white'), 3.5);
+	    light.position.set(0, 1, 0);
+	    scene.add(light);
 	
 	    renderer.setSize(width, height);
 	
 	    this.scene = scene;
 	    this.camera = camera;
 	    this.renderer = renderer;
+	    this.light = light;
 	
 	    this.renderer.domElement.style.position = 'absolute';
+	    this.renderer.domElement.style.zIndex = '-1';
 	    this.renderer.domElement.style.left = 0;
 	    this.renderer.domElement.style.top = 0;
+	
+	    this.modelLoader.load('/assets/shiffman.glb', function (asset) {
+	      _this2.shifmanModel = asset.scene;
+	      console.log(_this2.shifmanModel);
+	      _this2.scene.add(_this2.shifmanModel);
+	    });
 	
 	    document.getElementById('gl_container').appendChild(this.renderer.domElement);
 	
@@ -42691,6 +42701,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	  Header.prototype.animate = function animate() {
 	    this.renderScene();
 	    this.frameId = window.requestAnimationFrame(this.animate);
+	
+	    if (this.shifmanModel) {
+	      this.shifmanModel.rotation.y += 0.005;
+	    }
 	  };
 	
 	  Header.prototype.renderScene = function renderScene() {
@@ -42703,7 +42717,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      {
 	        id: 'gl_container',
 	        style: {
-	          background: 'black',
+	          background: 'tranparent',
 	          marginBottom: '1.45rem'
 	        }
 	      },
@@ -42714,7 +42728,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	            margin: '0 auto',
 	            maxWidth: 960,
 	            height: '32rem',
-	            padding: '13rem 1.0875rem'
+	            padding: '13rem 1.0875rem',
+	            zIndex: 10
 	          }
 	        },
 	        _react2.default.createElement(
@@ -42726,7 +42741,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	              to: '/',
 	              style: {
 	                color: 'white',
-	                textDecoration: 'none'
+	                textDecoration: 'none',
+	                zIndex: 10
 	              }
 	            },
 	            this.props.siteTitle
@@ -95103,13 +95119,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 342 */
 /***/ (function(module, exports) {
 
-	module.exports = {"assetsByChunkName":{"path---tags-tool":["path---tags-tool-4bdde4a2e1b49310126a.js","path---tags-tool-4bdde4a2e1b49310126a.js.map"],"component---src-pages-index-js":["component---src-pages-index-js-bdfd51e3af47b1ce73f8.js","component---src-pages-index-js-bdfd51e3af47b1ce73f8.js.map"],"component---src-templates-tags-js":["component---src-templates-tags-js-16b627a10d49eff517c4.js","component---src-templates-tags-js-16b627a10d49eff517c4.js.map"],"path---tags":["path---tags-31f19a54252dd95c6d12.js","path---tags-31f19a54252dd95c6d12.js.map"],"path---":["path----bb92ae67c2a2f021a77c.js","path----bb92ae67c2a2f021a77c.js.map"],"path---volume":["path---volume-b733d732e51e50486de9.js","path---volume-b733d732e51e50486de9.js.map"],"path---tags-immersive":["path---tags-immersive-72134c1acf16b5574ea4.js","path---tags-immersive-72134c1acf16b5574ea4.js.map"],"path---detune":["path---detune-be6a0752b096a8db78e6.js","path---detune-be6a0752b096a8db78e6.js.map"],"component---src-templates-project-js":["component---src-templates-project-js-2b53b1abed06ba95136e.js","component---src-templates-project-js-2b53b1abed06ba95136e.js.map"],"component---src-layouts-index-js":["component---src-layouts-index-js-779a1f93544e44c3a184.js","component---src-layouts-index-js-779a1f93544e44c3a184.js.map"],"path---index":["path---index-9db733163cc9d450f1b7.js","path---index-9db733163cc9d450f1b7.js.map"],"component---src-pages-404-js":["component---src-pages-404-js-4503918ea3a16cfcdb75.js","component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"],"commons":["commons-b71e7233220735cda602.js","build-js-styles.css","commons-b71e7233220735cda602.js.map","build-js-styles.css.map"],"path---404-html":["path---404-html-a0e39f21c11f6a62c5ab.js","path---404-html-a0e39f21c11f6a62c5ab.js.map"],"component---src-templates-all-tags-js":["component---src-templates-all-tags-js-3278f937789f8101caa2.js","component---src-templates-all-tags-js-3278f937789f8101caa2.js.map"],"path---tags-experiment":["path---tags-experiment-6723c43112cee8d60c81.js","path---tags-experiment-6723c43112cee8d60c81.js.map"],"app":["app-5ca2cd01f76f189c3e49.js","build-js-styles.css","app-5ca2cd01f76f189c3e49.js.map","build-js-styles.css.map"],"path---tags-machine-learning":["path---tags-machine-learning-eb1048ec089c939b9e27.js","path---tags-machine-learning-eb1048ec089c939b9e27.js.map"],"path---404":["path---404-a0e39f21c11f6a62c5ab.js","path---404-a0e39f21c11f6a62c5ab.js.map"]}}
+	module.exports = {"assetsByChunkName":{"path---tags-tool":["path---tags-tool-4bdde4a2e1b49310126a.js","path---tags-tool-4bdde4a2e1b49310126a.js.map"],"component---src-pages-index-js":["component---src-pages-index-js-bdfd51e3af47b1ce73f8.js","component---src-pages-index-js-bdfd51e3af47b1ce73f8.js.map"],"component---src-templates-tags-js":["component---src-templates-tags-js-16b627a10d49eff517c4.js","component---src-templates-tags-js-16b627a10d49eff517c4.js.map"],"path---tags":["path---tags-31f19a54252dd95c6d12.js","path---tags-31f19a54252dd95c6d12.js.map"],"path---":["path----bb92ae67c2a2f021a77c.js","path----bb92ae67c2a2f021a77c.js.map"],"path---volume":["path---volume-b733d732e51e50486de9.js","path---volume-b733d732e51e50486de9.js.map"],"path---tags-immersive":["path---tags-immersive-72134c1acf16b5574ea4.js","path---tags-immersive-72134c1acf16b5574ea4.js.map"],"path---detune":["path---detune-be6a0752b096a8db78e6.js","path---detune-be6a0752b096a8db78e6.js.map"],"component---src-templates-project-js":["component---src-templates-project-js-2b53b1abed06ba95136e.js","component---src-templates-project-js-2b53b1abed06ba95136e.js.map"],"component---src-layouts-index-js":["component---src-layouts-index-js-833f7910b9f11f67a9d4.js","component---src-layouts-index-js-833f7910b9f11f67a9d4.js.map"],"path---index":["path---index-9db733163cc9d450f1b7.js","path---index-9db733163cc9d450f1b7.js.map"],"component---src-pages-404-js":["component---src-pages-404-js-4503918ea3a16cfcdb75.js","component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"],"commons":["commons-b71e7233220735cda602.js","build-js-styles.css","commons-b71e7233220735cda602.js.map","build-js-styles.css.map"],"path---404-html":["path---404-html-a0e39f21c11f6a62c5ab.js","path---404-html-a0e39f21c11f6a62c5ab.js.map"],"component---src-templates-all-tags-js":["component---src-templates-all-tags-js-3278f937789f8101caa2.js","component---src-templates-all-tags-js-3278f937789f8101caa2.js.map"],"path---tags-experiment":["path---tags-experiment-6723c43112cee8d60c81.js","path---tags-experiment-6723c43112cee8d60c81.js.map"],"app":["app-5ca2cd01f76f189c3e49.js","build-js-styles.css","app-5ca2cd01f76f189c3e49.js.map","build-js-styles.css.map"],"path---tags-machine-learning":["path---tags-machine-learning-eb1048ec089c939b9e27.js","path---tags-machine-learning-eb1048ec089c939b9e27.js.map"],"path---404":["path---404-a0e39f21c11f6a62c5ab.js","path---404-a0e39f21c11f6a62c5ab.js.map"]}}
 
 /***/ }),
 /* 343 */
 /***/ (function(module, exports) {
 
-	module.exports = "{\"231608221292675\":\"app-5ca2cd01f76f189c3e49.js\",\"205117723866763\":\"component---src-templates-all-tags-js-3278f937789f8101caa2.js\",\"50739212244294\":\"component---src-templates-tags-js-16b627a10d49eff517c4.js\",\"110308036455227\":\"component---src-templates-project-js-2b53b1abed06ba95136e.js\",\"162898551421021\":\"component---src-pages-404-js-4503918ea3a16cfcdb75.js\",\"35783957827783\":\"component---src-pages-index-js-bdfd51e3af47b1ce73f8.js\",\"60335399758886\":\"path----bb92ae67c2a2f021a77c.js\",\"55702396619907\":\"path---tags-31f19a54252dd95c6d12.js\",\"208891142068360\":\"path---tags-experiment-6723c43112cee8d60c81.js\",\"70218087590163\":\"path---tags-immersive-72134c1acf16b5574ea4.js\",\"247668456180181\":\"path---tags-machine-learning-eb1048ec089c939b9e27.js\",\"12781602048153\":\"path---tags-tool-4bdde4a2e1b49310126a.js\",\"79842715695271\":\"path---detune-be6a0752b096a8db78e6.js\",\"61474902211473\":\"path---volume-b733d732e51e50486de9.js\",\"254022195166212\":\"path---404-a0e39f21c11f6a62c5ab.js\",\"142629428675168\":\"path---index-9db733163cc9d450f1b7.js\",\"178698757827068\":\"path---404-html-a0e39f21c11f6a62c5ab.js\",\"114276838955818\":\"component---src-layouts-index-js-779a1f93544e44c3a184.js\"}"
+	module.exports = "{\"231608221292675\":\"app-5ca2cd01f76f189c3e49.js\",\"205117723866763\":\"component---src-templates-all-tags-js-3278f937789f8101caa2.js\",\"50739212244294\":\"component---src-templates-tags-js-16b627a10d49eff517c4.js\",\"110308036455227\":\"component---src-templates-project-js-2b53b1abed06ba95136e.js\",\"162898551421021\":\"component---src-pages-404-js-4503918ea3a16cfcdb75.js\",\"35783957827783\":\"component---src-pages-index-js-bdfd51e3af47b1ce73f8.js\",\"60335399758886\":\"path----bb92ae67c2a2f021a77c.js\",\"55702396619907\":\"path---tags-31f19a54252dd95c6d12.js\",\"208891142068360\":\"path---tags-experiment-6723c43112cee8d60c81.js\",\"70218087590163\":\"path---tags-immersive-72134c1acf16b5574ea4.js\",\"247668456180181\":\"path---tags-machine-learning-eb1048ec089c939b9e27.js\",\"12781602048153\":\"path---tags-tool-4bdde4a2e1b49310126a.js\",\"79842715695271\":\"path---detune-be6a0752b096a8db78e6.js\",\"61474902211473\":\"path---volume-b733d732e51e50486de9.js\",\"254022195166212\":\"path---404-a0e39f21c11f6a62c5ab.js\",\"142629428675168\":\"path---index-9db733163cc9d450f1b7.js\",\"178698757827068\":\"path---404-html-a0e39f21c11f6a62c5ab.js\",\"114276838955818\":\"component---src-layouts-index-js-833f7910b9f11f67a9d4.js\"}"
 
 /***/ })
 /******/ ])
