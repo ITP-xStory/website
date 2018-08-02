@@ -1,6 +1,8 @@
 import React, { Component, ReactDOM } from 'react'
 import Link from 'gatsby-link'
 import * as THREE from 'three'
+const GLTFLoader = require('../3rd-party/gltfloader.js')
+GLTFLoader(THREE)
 
 class Header extends Component {
   constructor(props) {
@@ -15,6 +17,8 @@ class Header extends Component {
     this.stop = this.stop.bind(this)
     this.animate = this.animate.bind(this)
     this.componentDidMount = this.componentDidMount.bind(this);
+
+    this.modelLoader = new THREE.GLTFLoader()
   }
 
   componentDidMount() {
@@ -24,20 +28,16 @@ class Header extends Component {
     const scene = new THREE.Scene()
     const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000)
     const renderer = new THREE.WebGLRenderer({ alpha: true })
-    const geometry = new THREE.BoxGeometry(1, 1, 1)
-    const material = new THREE.MeshNormalMaterial()
-    const cube = new THREE.Mesh(geometry, material)
 
-    camera.position.z = 4
-    scene.add(cube)
-    // renderer.setClearColor('#000000')
+    this.modelLoader.load('https://www.dropbox.com/s/wxtzb43cjf02ztf/shiffman.glb?dl=1', (asset)=>{
+      console.log(asset)
+    });
+
     renderer.setSize(width, height)
 
     this.scene = scene
     this.camera = camera
     this.renderer = renderer
-    this.material = material
-    this.cube = cube
 
     this.renderer.domElement.style.position = 'absolute'
     this.renderer.domElement.style.left = 0
@@ -72,9 +72,6 @@ class Header extends Component {
   }
 
   animate() {
-    this.cube.rotation.x += 0.01
-    this.cube.rotation.y += 0.01
-    this.cube.position.y = Math.sin(this.cube.rotation.y)
 
     this.renderScene()
     this.frameId = window.requestAnimationFrame(this.animate)
