@@ -46,7 +46,7 @@ class Header extends Component {
     this.renderer.domElement.style.left = 0
     this.renderer.domElement.style.top = 0
 
-    this.modelLoader.load('/assets/shiffman.glb', (asset)=>{
+    this.modelLoader.load('/website/assets/shiffman.glb', (asset)=>{
       this.shifmanModel = asset.scene
       console.log(this.shifmanModel)
       this.scene.add(this.shifmanModel)
