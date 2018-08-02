@@ -1,8 +1,9 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import '../layouts/styles.css'
 
 const Section = ({ headline, body }) => (
-  <div>
+  <div className="section">
     <div
       style={{
         margin: '0 auto',

@@ -1,6 +1,7 @@
 import React, { Component, ReactDOM } from 'react'
 import Link from 'gatsby-link'
 import * as THREE from 'three'
+import '../layouts/index.css'
 
 const GLTFLoader = require('../3rd-party/gltfloader.js')
 GLTFLoader(THREE)
@@ -111,18 +112,16 @@ class Header extends Component {
             zIndex: 10,
           }}
         >
-          <h1 style={{ margin: 0 }}>
-            <Link
+          <Link
               to="/"
-              style={{
-                color: 'white',
-                textDecoration: 'none',
-                zIndex: 10,
-              }}
-            >
+              className='noUnderline'
+          >
+            <h1 
+              className='siteTitle'
+              style={{ margin: 0 }}>
               {this.props.siteTitle}
-            </Link>
-          </h1>
+            </h1>
+          </Link>
         </div>
       </div>
     )

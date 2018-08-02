@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: `/website`,
   siteMetadata: {
-    title: 'Experiments in Storytelling.',
+    title: 'ITP XStory: Experiments in Storytelling',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
