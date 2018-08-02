@@ -4,7 +4,7 @@ node_modules
 yarn-error.log
 
 # Build directory
-/public
-!/public/assets
+/public/*
+!/public/assets/shiffman.glb
 
 .DS_Store
