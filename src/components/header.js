@@ -1,5 +1,6 @@
 import React, { Component, ReactDOM } from 'react'
 import Link from 'gatsby-link'
+import { withPrefix } from 'gatsby-link'
 import * as THREE from 'three'
 
 const GLTFLoader = require('../3rd-party/gltfloader.js')
@@ -46,7 +47,7 @@ class Header extends Component {
     this.renderer.domElement.style.left = 0
     this.renderer.domElement.style.top = 0
 
-    this.modelLoader.load('./website/assets/shiffman.glb', asset => {
+    this.modelLoader.load(withPrefix('/assets/shiffman.glb'), asset => {
       this.shifmanModel = asset.scene
       console.log(this.shifmanModel)
       this.scene.add(this.shifmanModel)
