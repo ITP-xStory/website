@@ -42,9 +42,9 @@ class IndexPage extends Component {
 
         {/* About */}
         <Section
-          headline="XStory is back! 🤘"
+          headline="xStory is back! 🤘"
           body="
-          ITP XStory is an organization dedicated to support, to promote and to publish innovative creative projects and tools in the field of digital storytelling and digital art, by ITP studets and alumni.
+          ITP xStory is an organization dedicated to support, to promote and to publish innovative creative projects and tools in the field of digital storytelling and digital art, by ITP studets and alumni.
 
           The organization vision is to reach as many digital creators as possible, to inspire them with cutting edge ideas and creation tools, and to build a community of explorers around these ideas.
           
@@ -56,7 +56,7 @@ class IndexPage extends Component {
         <Section
           headline="Applications are now open"
           body="
-          ITP XStory is an organization dedicated to support, to promote and to publish innovative creative projects and tools in the field of digital storytelling and digital art, by ITP studets and alumni.
+          ITP xStory is an organization dedicated to support, to promote and to publish innovative creative projects and tools in the field of digital storytelling and digital art, by ITP studets and alumni.
 
           The organization vision is to reach as many digital creators as possible, to inspire them with cutting edge ideas and creation tools, and to build a community of explorers around these ideas.
   
@@ -112,7 +112,7 @@ class IndexPage extends Component {
                   <b>Development expenses</b>
                 </p>
                 <p>
-                  XStory will cover all development costs. From cloud storage to
+                  xStory will cover all development costs. From cloud storage to
                   GPUs for convolutional networks training. We got your back!
                   Think big!
                 </p>
@@ -139,7 +139,7 @@ class IndexPage extends Component {
                     <b>Publication costs coverage</b>
                   </p>
                   <p>
-                  Xstory will guide the winners though the process of publishing
+                  xStory will guide the winners though the process of publishing
                   the project or the tool, and will cover all costs for festivals or conference submissions.
                   </p>
                 </center>
@@ -148,7 +148,7 @@ class IndexPage extends Component {
         </div>
 
         {/* Team */}
-        <Section headline="The Xstory Team" body="Please feel free to reach out for anything! We would love to hear from you!" />
+        <Section headline="The xStory Team" body="Please feel free to reach out for anything! We would love to hear from you!" />
         <Team/>
         <br />
         <br />
