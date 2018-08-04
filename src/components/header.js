@@ -111,10 +111,7 @@ class Header extends Component {
     return (
       <div
         id="gl_container"
-        style={{
-          background: 'tranparent',
-          marginBottom: '1.45rem',
-        }}
+        className='header'
       >
         <div
           style={{
@@ -131,7 +128,7 @@ class Header extends Component {
           >
             <h1 
               className='siteTitle'
-              style={{ margin: 0 }}>
+              >
               {this.props.siteTitle}
             </h1>
           </Link>

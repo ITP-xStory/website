@@ -14,7 +14,32 @@ class IndexPage extends Component {
   render() {
     const { edges: posts } = this.props.data.allMarkdownRemark
     return (
-      <div>
+      <div className='container'>
+
+        {/* Past Projects */}
+        <Section headline="Projects" body="" />
+          <div className="fluid-container">
+            <div className="row">
+              {posts.map(({ node: post }) => {
+                const { frontmatter } = post
+                return (
+                  <Link
+                    to={frontmatter.path}
+                    className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 noUnderline"
+                    >
+                    <div className='project'>
+                    <img src={frontmatter.thumbnail} />
+                    <h4>
+                      {frontmatter.title}
+                    </h4>
+                    <p>{frontmatter.excerpt}</p>
+                    </div>
+                  </Link>
+                )
+              })}
+            </div>
+          </div>
+
         {/* About */}
         <Section
           headline="XStory is back! 🤘"
@@ -24,7 +49,7 @@ class IndexPage extends Component {
           The organization vision is to reach as many digital creators as possible, to inspire them with cutting edge ideas and creation tools, and to build a community of explorers around these ideas.
           
           The organization is sponsored and supported by NYU ITP.
-        "
+          "
         />
 
         {/* Applications */}
@@ -51,18 +76,20 @@ class IndexPage extends Component {
           headline="What are we looking for?"
           body="
           Innovative projects, that could inspire the creative community as a whole and the ITP / IMA community in particular, or tools, that will allow these community to create innovative projects."
+          small={true}
         />
 
          <Section
           headline="Who can apply?"
           body="
           Groups or individuals of existing students at NYU ITP or NYU IMA."
+          small={true}
         />
 
         <Section
           headline="What do you get?"
+          small={true}
         />
-        <br/>
         <div className="fluid-container">
           <div className="row">
             <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
@@ -92,7 +119,6 @@ class IndexPage extends Component {
               </center>
             </div>
           </div>
-          <br />
           <div className="row">
             <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
                 <center>
@@ -118,30 +144,6 @@ class IndexPage extends Component {
                   </p>
                 </center>
               </div>
-          </div>
-        </div>
-
-        {/* Past Projects */}
-        <Section headline="Projects" body="" />
-        <div className="fluid-container">
-          <div className="row">
-            {posts.map(({ node: post }) => {
-              const { frontmatter } = post
-              return (
-                <Link
-                  to={frontmatter.path}
-                  className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 noUnderline"
-                  >
-                  <div className='project'>
-                  <img src={frontmatter.thumbnail} />
-                  <h4>
-                    {frontmatter.title}
-                  </h4>
-                  <p>{frontmatter.excerpt}</p>
-                  </div>
-                </Link>
-              )
-            })}
           </div>
         </div>
 
