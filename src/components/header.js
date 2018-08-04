@@ -1,5 +1,6 @@
 import React, { Component, ReactDOM } from 'react'
 import Link from 'gatsby-link'
+import { withPrefix } from 'gatsby-link'
 import * as THREE from 'three'
 import '../layouts/index.css'
 
@@ -19,6 +20,7 @@ class Header extends Component {
     this.stop = this.stop.bind(this)
     this.animate = this.animate.bind(this)
     this.componentDidMount = this.componentDidMount.bind(this)
+    this.onWindowResize = this.onWindowResize.bind(this)
 
     this.modelLoader = new THREE.GLTFLoader()
   }
@@ -47,25 +49,36 @@ class Header extends Component {
     this.renderer.domElement.style.left = 0
     this.renderer.domElement.style.top = 0
 
-    this.modelLoader.load('./website/assets/shiffman.glb', asset => {
-      this.shifmanModel = asset.scene
-      console.log(this.shifmanModel)
-      this.scene.add(this.shifmanModel)
-    })
+    this.modelLoader.load(
+      withPrefix('/assets/shiffman.glb'),
+      asset => {
+        this.shifmanModel = asset.scene
+        console.log(this.shifmanModel)
+        this.scene.add(this.shifmanModel)
+      },
+      xhr => {
+        console.log((xhr.loaded / xhr.total) * 100 + '% loaded')
+      }
+    )
 
     document
       .getElementById('gl_container')
       .appendChild(this.renderer.domElement)
 
+    window.addEventListener('resize', this.onWindowResize)
+
     this.start()
   }
 
-  onWindowResize(e) {
-    console.log(e)
+  onWindowResize() {
+    this.camera.aspect = window.innerWidth / 576
+    this.camera.updateProjectionMatrix()
+    this.renderer.setSize(window.innerWidth, 576)
   }
 
   componentWillUnmount() {
     this.stop()
+    window.removeEventListener('resize', this.onWindowResize)
     document
       .getElementById('gl_container')
       .removeChild(this.renderer.domElement)
