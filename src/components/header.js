@@ -2,6 +2,7 @@ import React, { Component, ReactDOM } from 'react'
 import Link from 'gatsby-link'
 import { withPrefix } from 'gatsby-link'
 import * as THREE from 'three'
+import '../layouts/index.css'
 
 const GLTFLoader = require('../3rd-party/gltfloader.js')
 GLTFLoader(THREE)
@@ -110,10 +111,7 @@ class Header extends Component {
     return (
       <div
         id="gl_container"
-        style={{
-          background: 'tranparent',
-          marginBottom: '1.45rem',
-        }}
+        className='header'
       >
         <div
           style={{
@@ -124,18 +122,16 @@ class Header extends Component {
             zIndex: 10,
           }}
         >
-          <h1 style={{ margin: 0 }}>
-            <Link
+          <Link
               to="/"
-              style={{
-                color: 'white',
-                textDecoration: 'none',
-                zIndex: 10,
-              }}
-            >
+              className='noUnderline'
+          >
+            <h1 
+              className='siteTitle'
+              >
               {this.props.siteTitle}
-            </Link>
-          </h1>
+            </h1>
+          </Link>
         </div>
       </div>
     )

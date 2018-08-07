@@ -1,4 +1,4 @@
-# XStory website
+# xStory website
 
 [![Build Status](https://travis-ci.org/ITP-Xstory/website.svg?branch=master)](https://travis-ci.org/ITP-Xstory/website)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)
@@ -16,7 +16,7 @@
     - [Build commands](#build-commands)
 
 ### What is XStory?
-ITP XStory is an organization dedicated to support, to promote and to publish innovative creative projects and tools in the field of digital storytelling and digital art, by ITP studets and alumni. The organization vision is to reach as many digital creators as possible, to inspire them with cutting edge ideas and creation tools, and to build a community of explorers around these ideas. The organization is sponsored and supported by NYU ITP.
+ITP xStory is an organization dedicated to support, to promote and to publish innovative creative projects and tools in the field of digital storytelling and digital art, by ITP studets and alumni. The organization vision is to reach as many digital creators as possible, to inspire them with cutting edge ideas and creation tools, and to build a community of explorers around these ideas. The organization is sponsored and supported by NYU ITP.
 
 ### Getting started
 #### Setting up the enviorment:

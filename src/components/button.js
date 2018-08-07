@@ -1,19 +1,9 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const Button = ({ text }) => (
+const Button = ({ text, url }) => (
   <div>
-    <button
-      style={{
-        border: '1px solid #000000',
-        borderRadius: '5px',
-        padding: '13px',
-        background: 'transparent',
-        cursor: 'pointer',
-      }}
-    >
-      {text}
-    </button>
+    <a className="btn btn-outline-primary" href={url} role="button" target="_blank">{text}</a>
     <br />
     <br />
   </div>
