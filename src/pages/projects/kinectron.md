@@ -4,7 +4,7 @@ date: '2018-05-23T12:34:00+00:00'
 title: "Kinectron"
 tags: ["Tool"]
 thumbnail: 'https://kinectron.github.io/img/depth.gif'
-excerpt: "This is a test for the first project"
+excerpt: "Kinectron is a node-based library that broadcasts Kinect2 data over a peer connection. It builds on the Node Kinect2 and PeerJS libraries."
 ---
 # Kinectron
 ## A Realtime Peer Server for Kinect 2
