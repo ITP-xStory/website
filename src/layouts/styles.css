@@ -87,6 +87,12 @@ blockquote {
   margin-top: 0.2em;
 }
 
+.projectThumbnail {
+  height: 220px;
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+
 .noUnderline  {
   text-decoration: none;
   user-select: none;
