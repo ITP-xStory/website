@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
+import favicon from '../favicon.png'
+
 const Template = ({ data, location, pathContext }) => {
   const { markdownRemark: post } = data
   const { frontmatter, html } = post
@@ -10,7 +12,9 @@ const Template = ({ data, location, pathContext }) => {
 
   return (
     <div>
-      <Helmet title={`${title} - My Blog`} />
+      <Helmet title={`${title}`} link={[
+        { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
+      ]} />
       <div>
         <div dangerouslySetInnerHTML={{ __html: html }} />
         <p>
