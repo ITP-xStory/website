@@ -111,8 +111,19 @@ blockquote {
   line-height: 22px;
 }
 
+.btn {
+  color: blue;
+  border-color: blue;
+}
+
+.btn:hover {
+  color:white;
+  background-color: blue;
+  border-color: blue;
+}
+
 .member a {
-  color: #7e7e7e;
+  color: #4e4e4e;
 }
 
 .member_photo {
