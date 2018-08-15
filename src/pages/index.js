@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Section from '../components/section'
 import Button from '../components/button'
 import Team from '../components/team'
+import Attributes from '../components/attributes'
 
 class IndexPage extends Component {
   constructor(props) {
@@ -15,6 +16,8 @@ class IndexPage extends Component {
     const { edges: posts } = this.props.data.allMarkdownRemark
     return (
       <div className='container'>
+        
+        <Attributes/>
 
         {/* Past Projects */}
         <Section headline="Projects" body="" />
@@ -29,7 +32,7 @@ class IndexPage extends Component {
                     >
                     <div className='project'>
                     <div className='projectThumbnail'>
-                      <img  src={frontmatter.thumbnail} />
+                      <img  src={frontmatter.thumbnail} alt={frontmatter.title}/>
                     </div>
                     <h4>
                       {frontmatter.title}

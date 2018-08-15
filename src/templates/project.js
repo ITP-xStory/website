@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
+import Attributes from '../components/attributes'
 
 import favicon from '../favicon.png'
 
@@ -12,6 +13,7 @@ const Template = ({ data, location, pathContext }) => {
 
   return (
     <div>
+      <Attributes/>
       <Helmet title={`${title}`} link={[
         { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
       ]} />
