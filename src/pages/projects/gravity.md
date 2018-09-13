@@ -1,13 +1,17 @@
 ---
 path: '/gravity'
 date: '2017-01-30T12:34:00+00:00'
-title: "Gravity"
-tags: ["Experience", "Immersive"]
+title: 'Gravity'
+tags: ['Experience', 'Immersive']
 thumbnail: 'http://wangxinyao-design.com/images/world.gif'
-excerpt: "Gravity allows users to play in an magical version of mundane moments, where their movements can control the rules of physics."
+excerpt:
+  'Gravity allows users to play in an magical version of mundane moments, where their movements can control the rules of physics.'
 ---
+
 # Gravity
+
 ## Immersive installation
+
 > [Xinyao Wang](http://wangxinyao-design.com/)  
 > 2017
 
