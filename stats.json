@@ -1,12 +1,12 @@
 {
   "assetsByChunkName": {
     "path---tags-tool": [
-      "path---tags-tool-ff3b119d87a814cc91a8.js",
-      "path---tags-tool-ff3b119d87a814cc91a8.js.map"
+      "path---tags-tool-7d91864836c77d9369c3.js",
+      "path---tags-tool-7d91864836c77d9369c3.js.map"
     ],
     "path---tags-3-d": [
-      "path---tags-3-d-29e1b1ee90632d109fd0.js",
-      "path---tags-3-d-29e1b1ee90632d109fd0.js.map"
+      "path---tags-3-d-ec644191c93784117906.js",
+      "path---tags-3-d-ec644191c93784117906.js.map"
     ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-eacf5cd16cd044dadb34.js",
@@ -25,20 +25,20 @@
       "path----229a695e3e096fd4af3b.js.map"
     ],
     "path---tags-immersive": [
-      "path---tags-immersive-03213350ef2bea2784dc.js",
-      "path---tags-immersive-03213350ef2bea2784dc.js.map"
+      "path---tags-immersive-c5a670a1f00ae5de042d.js",
+      "path---tags-immersive-c5a670a1f00ae5de042d.js.map"
     ],
     "path---villagelive": [
-      "path---villagelive-73addd41b82ff6018160.js",
-      "path---villagelive-73addd41b82ff6018160.js.map"
+      "path---villagelive-f0fa654d0b96c490718d.js",
+      "path---villagelive-f0fa654d0b96c490718d.js.map"
     ],
     "path---gravity": [
       "path---gravity-e6916df4aaa0da03c686.js",
       "path---gravity-e6916df4aaa0da03c686.js.map"
     ],
     "path---skeletron": [
-      "path---skeletron-23527bdc5d65ac3177d1.js",
-      "path---skeletron-23527bdc5d65ac3177d1.js.map"
+      "path---skeletron-b7300b8b6b6f5766c1e6.js",
+      "path---skeletron-b7300b8b6b6f5766c1e6.js.map"
     ],
     "component---src-templates-project-js": [
       "component---src-templates-project-js-ec51810a12384f6c9297.js",
@@ -49,12 +49,12 @@
       "component---src-layouts-index-js-324d90647776023fcbda.js.map"
     ],
     "path---index": [
-      "path---index-ce0972c1c571c93fe750.js",
-      "path---index-ce0972c1c571c93fe750.js.map"
+      "path---index-8a4306989d49113163e3.js",
+      "path---index-8a4306989d49113163e3.js.map"
     ],
     "path---kinectron": [
-      "path---kinectron-b2a3d2eef543efb70dcb.js",
-      "path---kinectron-b2a3d2eef543efb70dcb.js.map"
+      "path---kinectron-3aec497f9ea61ac35959.js",
+      "path---kinectron-3aec497f9ea61ac35959.js.map"
     ],
     "path---tags-experience": [
       "path---tags-experience-bcb3ffa0e93d919afc12.js",
@@ -85,8 +85,8 @@
       "build-js-styles.css.map"
     ],
     "path---tags-machine-learning": [
-      "path---tags-machine-learning-04e1f55c77d84b2ee8e7.js",
-      "path---tags-machine-learning-04e1f55c77d84b2ee8e7.js.map"
+      "path---tags-machine-learning-585543b404c2fac3731f.js",
+      "path---tags-machine-learning-585543b404c2fac3731f.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
