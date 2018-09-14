@@ -15,35 +15,35 @@ class IndexPage extends Component {
   render() {
     const { edges: posts } = this.props.data.allMarkdownRemark
     return (
-      <div className='container'>
-        
-        <Attributes/>
+      <div className="container">
+        <Attributes />
 
         {/* Past Projects */}
         <Section headline="Projects" body="" />
-          <div className="fluid-container">
-            <div className="row">
-              {posts.map(({ node: post }) => {
-                const { frontmatter } = post
-                return (
-                  <Link
-                    to={frontmatter.path}
-                    className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 noUnderline"
-                    >
-                    <div className='project'>
-                    <div className='projectThumbnail'>
-                      <img  src={frontmatter.thumbnail} alt={frontmatter.title}/>
+        <div className="fluid-container">
+          <div className="row">
+            {posts.map(({ node: post }) => {
+              const { frontmatter } = post
+              return (
+                <Link
+                  to={frontmatter.path}
+                  className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 noUnderline"
+                >
+                  <div className="project">
+                    <div className="projectThumbnail">
+                      <img
+                        src={frontmatter.thumbnail}
+                        alt={frontmatter.title}
+                      />
                     </div>
-                    <h4>
-                      {frontmatter.title}
-                    </h4>
+                    <h4>{frontmatter.title}</h4>
                     <p>{frontmatter.excerpt}</p>
-                    </div>
-                  </Link>
-                )
-              })}
-            </div>
+                  </div>
+                </Link>
+              )
+            })}
           </div>
+        </div>
 
         {/* About */}
         <Section
@@ -60,13 +60,7 @@ class IndexPage extends Component {
         {/* Applications */}
         <Section
           headline="Applications are now open"
-          body="
-          ITP xStory is an organization dedicated to support, to promote and to publish innovative creative projects and tools in the field of digital storytelling and digital art, by ITP studets and alumni.
-
-          The organization vision is to reach as many digital creators as possible, to inspire them with cutting edge ideas and creation tools, and to build a community of explorers around these ideas.
-  
-          The organization is sponsored and supported by NYU ITP.
-        "
+          body="ITP xStory is an organization dedicated to supporting, promoting and publishing of innovative creative projects and tools in the field of digital storytelling and digital art, by ITP students and alumni. The organization vision is to reach as many digital creators as possible, to inspire them with cutting-edge ideas and creation tools, and to build a community of explorers around these ideas. The organization is sponsored and supported by NYU ITP."
         />
 
         <Button
@@ -84,17 +78,14 @@ class IndexPage extends Component {
           small={true}
         />
 
-         <Section
+        <Section
           headline="Who can apply?"
           body="
           Groups or individuals of existing students at NYU ITP or NYU IMA."
           small={true}
         />
 
-        <Section
-          headline="What do you get?"
-          small={true}
-        />
+        <Section headline="What do you get?" small={true} />
         <div className="fluid-container">
           <div className="row">
             <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
@@ -104,9 +95,9 @@ class IndexPage extends Component {
                   <b>Financial support</b>
                 </p>
                 <p>
-                  Individual winners will receive $1,000
-                  per semester for a full academic year.
-                  Groups will receive $2,000 per semester for a full academic year.
+                  Individual winners will receive $1,000 per semester for a full
+                  academic year. Groups will receive $2,000 per semester for a
+                  full academic year.
                 </p>
               </center>
             </div>
@@ -126,35 +117,40 @@ class IndexPage extends Component {
           </div>
           <div className="row">
             <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                <center>
-                  <h1>👩‍🔬</h1>
-                  <p>
-                    <b>Mentorship</b>
-                  </p>
-                  <p>
-                    A group of mentors, coming from the industry, the creative community
-                    and the ITP alumni network, will be available and will assist in the project direction.
-                  </p>
-                </center>
-              </div>
-              <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                <center>
-                  <h1>📰</h1>
-                  <p>
-                    <b>Publication costs coverage</b>
-                  </p>
-                  <p>
+              <center>
+                <h1>👩‍🔬</h1>
+                <p>
+                  <b>Mentorship</b>
+                </p>
+                <p>
+                  A group of mentors, coming from the industry, the creative
+                  community and the ITP alumni network, will be available and
+                  will assist in the project direction.
+                </p>
+              </center>
+            </div>
+            <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+              <center>
+                <h1>📰</h1>
+                <p>
+                  <b>Publication costs coverage</b>
+                </p>
+                <p>
                   xStory will guide the winners though the process of publishing
-                  the project or the tool, and will cover all costs for festivals or conference submissions.
-                  </p>
-                </center>
-              </div>
+                  the project or the tool, and will cover all costs for
+                  festivals or conference submissions.
+                </p>
+              </center>
+            </div>
           </div>
         </div>
 
         {/* Team */}
-        <Section headline="The xStory Team" body="Please feel free to reach out for anything! We would love to hear from you!" />
-        <Team/>
+        <Section
+          headline="The xStory Team"
+          body="Please feel free to reach out for anything! We would love to hear from you!"
+        />
+        <Team />
         <br />
         <br />
         <br />
