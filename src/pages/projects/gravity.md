@@ -3,7 +3,7 @@ path: '/gravity'
 date: '2017-01-30T12:34:00+00:00'
 title: 'Gravity'
 tags: ['Experience', 'Immersive']
-thumbnail: 'http://wangxinyao-design.com/images/world.gif'
+thumbnail: 'https://imgur.com/download/6cDzdkk'
 excerpt:
   'Gravity allows users to play in an magical version of mundane moments, where their movements can control the rules of physics.'
 ---
