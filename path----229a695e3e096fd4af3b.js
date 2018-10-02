@@ -1,2 +1,0 @@
-webpackJsonp([60335399758886],{114:function(t,e){t.exports={data:{site:{siteMetadata:{title:"ITP xStory: Experiments in Storytelling"}}},layoutContext:{}}}});
-//# sourceMappingURL=path----229a695e3e096fd4af3b.js.map
