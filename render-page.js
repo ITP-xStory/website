@@ -44,7 +44,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.c = installedModules;
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/";
+/******/ 	__webpack_require__.p = "/website/";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -126,7 +126,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = function (locals, callback) {
 	  var pathPrefix = "/";
 	  if (true) {
-	    pathPrefix = ("") + "/";
+	    pathPrefix = ("/website") + "/";
 	  }
 	
 	  var bodyHtml = "";
@@ -42821,7 +42821,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	/*global __PREFIX_PATHS__, __PATH_PREFIX__ */
 	var pathPrefix = "/";
 	if (true) {
-	  pathPrefix = ("");
+	  pathPrefix = ("/website");
 	}
 	
 	function withPrefix(path) {
