@@ -1,5 +1,6 @@
 module.exports = {
-  pathPrefix: `/website`,
+  pathPrefix: `/`,
+  siteUrl: 'https://www.itpxstory.com',
   siteMetadata: {
     title: 'ITP xStory: Experiments in Storytelling',
   },
