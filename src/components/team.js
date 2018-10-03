@@ -13,7 +13,7 @@ const Team = ({}) => (
       <div className="member_name">Or Fleisher</div>
       <div className="member_name">orfleisher@nyu.edu</div>
       <a
-        href="http://www.orfleisher.com"
+        href="https://orfleisher.com"
         target="_blank"
         className="noUnderline member_name"
       >
