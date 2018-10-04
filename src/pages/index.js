@@ -68,7 +68,7 @@ class IndexPage extends Component {
           url="https://goo.gl/forms/Emz3OTjOSUGIzct13"
         />
 
-        <p>* The application deadline is August 30th, 2018.</p>
+        <p>* The application deadline is November 18th, 2018.</p>
 
         {/* FAQ */}
         <Section
