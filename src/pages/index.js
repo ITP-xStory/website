@@ -17,6 +17,7 @@ class IndexPage extends Component {
     return (
       <div className="container">
         <Attributes />
+
         {/* Past Projects */}
         <Section headline="Projects" body="" />
         <div className="fluid-container">
@@ -59,7 +60,7 @@ class IndexPage extends Component {
         {/* Applications */}
         <Section
           headline="xStory is now open for project proposals"
-          body="ITP xStory is an organization dedicated to supporting, promoting and publishing of innovative creative projects and tools in the field of digital storytelling and digital art, by ITP students and alumni. The organization vision is to reach as many digital creators as possible, to inspire them with cutting-edge ideas and creation tools, and to build a community of explorers around these ideas. The organization is sponsored and supported by NYU ITP."
+          body="ITP xStory is an organization dedicated to supporting, promoting and publishing innovative creative projects and tools in the field of digital storytelling and digital art, by ITP students and alumni. The organization vision is to reach as many digital creators as possible, to inspire them with cutting-edge ideas and creation tools, and to build a community of explorers around these ideas. The organization is sponsored and supported by NYU ITP."
         />
 
         <Button
