@@ -59,16 +59,16 @@ class IndexPage extends Component {
 
         {/* Applications */}
         <Section
-          headline="Applications are now open"
+          headline="xStory is now open for project proposals"
           body="ITP xStory is an organization dedicated to supporting, promoting and publishing of innovative creative projects and tools in the field of digital storytelling and digital art, by ITP students and alumni. The organization vision is to reach as many digital creators as possible, to inspire them with cutting-edge ideas and creation tools, and to build a community of explorers around these ideas. The organization is sponsored and supported by NYU ITP."
         />
 
         <Button
-          text="Submit your application"
+          text="Submit your proposal"
           url="https://goo.gl/forms/Emz3OTjOSUGIzct13"
         />
 
-        <p>* The application deadline is November 18th, 2018.</p>
+        <p>* The submission deadline is November 18th, 2018.</p>
 
         {/* FAQ */}
         <Section
