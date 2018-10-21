@@ -17,7 +17,6 @@ class IndexPage extends Component {
     return (
       <div className="container">
         <Attributes />
-
         {/* Past Projects */}
         <Section headline="Projects" body="" />
         <div className="fluid-container">
