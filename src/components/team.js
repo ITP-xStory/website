@@ -75,7 +75,7 @@ const Team = ({}) => (
     <div className="member">
       <img
         className="member_photo"
-        src="https://static1.squarespace.com/static/587522d31b631b83e5109d95/t/5bb455e8c83025a8d2ce9e5f/1538545263304/thumbsup.jpg?format=2500w"
+        src="https://imgur.com/download/MJz3Mqd"
         alt="Rushali Paratey"
       />
       <div className="member_name">Rushali Paratey</div>
