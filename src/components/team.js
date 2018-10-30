@@ -54,6 +54,57 @@ const Team = ({}) => (
         <div className="member_name">www.lisajamhoury.com</div>
       </a>
     </div>
+
+    <div className="member">
+      <img
+        className="member_photo"
+        src="https://1.gravatar.com/avatar/bf546f4c968940643da75e3f2bd4481d?s=180&d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D100&r=G"
+        alt="Mithru Vigneshwara"
+      />
+      <div className="member_name">Mithru Vigneshwara</div>
+      <div className="member_name">mithru@nyu.edu</div>
+      <a
+        href="https://www.mithru.com"
+        target="_blank"
+        className="noUnderline member_name"
+      >
+        <div className="member_name">www.mithru.com</div>
+      </a>
+    </div>
+
+    <div className="member">
+      <img
+        className="member_photo"
+        src="https://static1.squarespace.com/static/587522d31b631b83e5109d95/t/5bb455e8c83025a8d2ce9e5f/1538545263304/thumbsup.jpg?format=2500w"
+        alt="Rushali Paratey"
+      />
+      <div className="member_name">Rushali Paratey</div>
+      <div className="member_name">rushali.paratey@nyu.edu</div>
+      <a
+        href="https://rushali.space/"
+        target="_blank"
+        className="noUnderline member_name"
+      >
+        <div className="member_name">www.rushali.space</div>
+      </a>
+    </div>
+
+    <div className="member">
+      <img
+        className="member_photo"
+        src="https://itp.nyu.edu/image.php?width=265&image=/people_pics/flash/kanao_k_562625.png"
+        alt="Koji Kanao"
+      />
+      <div className="member_name">Koji Kanao</div>
+      <div className="member_name">koji.kanao@nyu.edu</div>
+      <a
+        href="https://sleepy-maker.github.io/web/"
+        target="_blank"
+        className="noUnderline member_name"
+      >
+        <div className="member_name">sleepy-maker.github.io/web</div>
+      </a>
+    </div>
   </div>
 )
 

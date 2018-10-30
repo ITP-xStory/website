@@ -21,7 +21,7 @@ class Layout extends Component {
             {
               name: 'description',
               content:
-                'ITP xStory is an organization dedicated to supporting, promoting and publishing of innovative creative projects and tools in the field of digital storytelling and digital art, by ITP students and alumni. The organization vision is to reach as many digital creators as possible, to inspire them with cutting-edge ideas and creation tools, and to build a community of explorers around these ideas. The organization is sponsored and supported by NYU ITP.',
+                'ITP xStory is an organization dedicated to supporting, promoting and publishing innovative creative projects and tools in the field of digital storytelling and digital art, by ITP students and alumni. The organization vision is to reach as many digital creators as possible, to inspire them with cutting-edge ideas and creation tools, and to build a community of explorers around these ideas. The organization is sponsored and supported by NYU ITP.',
             },
             {
               name: 'keywords',
