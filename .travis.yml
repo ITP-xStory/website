@@ -6,6 +6,8 @@ node_js:
   - "stable"
 cache:
   yarn: true
+notifications:
+  slack: xstory:d5ojTjMGpaVoFdtVER3rR9XI
 deploy:
   provider: pages
   skip-cleanup: true
@@ -21,6 +23,8 @@ before_script:
   - "yarn install"
 script:
   - "yarn run format"
+  - "yarn run build_prefixed"
+  - "echo 'www.itpxstory.com' > ./public/CNAME"
 after_success:
   - "yarn run deploy"
 
