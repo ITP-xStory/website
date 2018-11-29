@@ -1,6 +1,6 @@
 # xStory website
 
-[![Build Status](https://travis-ci.org/ITP-Xstory/website.svg?branch=master)](https://travis-ci.org/ITP-xStory/website)
+[![Build Status](https://travis-ci.org/ITP-xStory/website.svg?branch=master)](https://travis-ci.org/ITP-xStory/website)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
