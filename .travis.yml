@@ -6,6 +6,8 @@ node_js:
   - "stable"
 cache:
   yarn: true
+notifications:
+  slack: xstory:d5ojTjMGpaVoFdtVER3rR9XI
 deploy:
   provider: pages
   skip-cleanup: true
