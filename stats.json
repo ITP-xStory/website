@@ -1,16 +1,16 @@
 {
   "assetsByChunkName": {
     "path---tags-tool": [
-      "path---tags-tool-7d91864836c77d9369c3.js",
-      "path---tags-tool-7d91864836c77d9369c3.js.map"
+      "path---tags-tool-d3ea0fadad1a7d2e6dee.js",
+      "path---tags-tool-d3ea0fadad1a7d2e6dee.js.map"
     ],
     "path---tags-3-d": [
       "path---tags-3-d-ec644191c93784117906.js",
       "path---tags-3-d-ec644191c93784117906.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-0b2cf6899d43733aa8d8.js",
-      "component---src-pages-index-js-0b2cf6899d43733aa8d8.js.map"
+      "component---src-pages-index-js-aa9d8dbd0fe453fd1a34.js",
+      "component---src-pages-index-js-aa9d8dbd0fe453fd1a34.js.map"
     ],
     "component---src-templates-tags-js": [
       "component---src-templates-tags-js-16b627a10d49eff517c4.js",
@@ -25,20 +25,24 @@
       "path----229a695e3e096fd4af3b.js.map"
     ],
     "path---tags-immersive": [
-      "path---tags-immersive-590aaf81d6002ad82715.js",
-      "path---tags-immersive-590aaf81d6002ad82715.js.map"
+      "path---tags-immersive-ace03004e5938362d355.js",
+      "path---tags-immersive-ace03004e5938362d355.js.map"
     ],
     "path---villagelive": [
-      "path---villagelive-f0fa654d0b96c490718d.js",
-      "path---villagelive-f0fa654d0b96c490718d.js.map"
+      "path---villagelive-39bf1e5143d64f18347d.js",
+      "path---villagelive-39bf1e5143d64f18347d.js.map"
     ],
     "path---gravity": [
-      "path---gravity-e6916df4aaa0da03c686.js",
-      "path---gravity-e6916df4aaa0da03c686.js.map"
+      "path---gravity-664bf8c270b0d7c26820.js",
+      "path---gravity-664bf8c270b0d7c26820.js.map"
+    ],
+    "path---codeofconduct": [
+      "path---codeofconduct-cec414a621cbed9e9757.js",
+      "path---codeofconduct-cec414a621cbed9e9757.js.map"
     ],
     "path---skeletron": [
-      "path---skeletron-b7300b8b6b6f5766c1e6.js",
-      "path---skeletron-b7300b8b6b6f5766c1e6.js.map"
+      "path---skeletron-a052d2bf84fe75c00f13.js",
+      "path---skeletron-a052d2bf84fe75c00f13.js.map"
     ],
     "component---src-templates-project-js": [
       "component---src-templates-project-js-ec51810a12384f6c9297.js",
@@ -49,16 +53,16 @@
       "component---src-layouts-index-js-408c52cf4fd939168e33.js.map"
     ],
     "path---index": [
-      "path---index-5e9d47fcf4452f26b0f8.js",
-      "path---index-5e9d47fcf4452f26b0f8.js.map"
+      "path---index-9e0873aade64248b878a.js",
+      "path---index-9e0873aade64248b878a.js.map"
     ],
     "path---kinectron": [
-      "path---kinectron-48863ebc57455aa87e6a.js",
-      "path---kinectron-48863ebc57455aa87e6a.js.map"
+      "path---kinectron-7b69de4cf33fc1fb7a05.js",
+      "path---kinectron-7b69de4cf33fc1fb7a05.js.map"
     ],
     "path---tags-experience": [
-      "path---tags-experience-c6d9798e839b0d56fc9e.js",
-      "path---tags-experience-c6d9798e839b0d56fc9e.js.map"
+      "path---tags-experience-d3671fe650567c3b43fa.js",
+      "path---tags-experience-d3671fe650567c3b43fa.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
@@ -70,6 +74,10 @@
       "commons-b71e7233220735cda602.js.map",
       "build-js-styles.css.map"
     ],
+    "path---mentorship": [
+      "path---mentorship-46f3360985d072f38f4a.js",
+      "path---mentorship-46f3360985d072f38f4a.js.map"
+    ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
@@ -79,9 +87,9 @@
       "component---src-templates-all-tags-js-bd4d15a92fdbe44c18fa.js.map"
     ],
     "app": [
-      "app-a61c1b140938e0486342.js",
+      "app-5746444090b4fc97289d.js",
       "build-js-styles.css",
-      "app-a61c1b140938e0486342.js.map",
+      "app-5746444090b4fc97289d.js.map",
       "build-js-styles.css.map"
     ],
     "path---tags-machine-learning": [
@@ -91,6 +99,10 @@
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-templates-guide-js": [
+      "component---src-templates-guide-js-e95ad3b6d5459e654c5d.js",
+      "component---src-templates-guide-js-e95ad3b6d5459e654c5d.js.map"
     ]
   }
 }
