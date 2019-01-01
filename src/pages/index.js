@@ -145,6 +145,20 @@ class IndexPage extends Component {
           </div>
         </div>
 
+        {/* Docs and Guides */}
+        <Section
+          headline="xStory Guides"
+          body="Please checkout the following pages about our ways of operation:"
+        />
+        <ul>
+          <li>
+            <Link to={'/mentorship'}>xStory Mentorship Guidelines</Link>
+          </li>
+          <li>
+            <Link to={'/codeofconduct'}>xStory Code of Conduct</Link>
+          </li>
+        </ul>
+
         {/* Team */}
         <Section
           headline="The xStory Team"
