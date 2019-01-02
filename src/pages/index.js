@@ -22,24 +22,27 @@ class IndexPage extends Component {
         <Section headline="Projects" body="" />
         <div className="fluid-container">
           <div className="row">
-            {posts.map(({ node: post }) => {
+            {posts.map(({ node: post }, index) => {
               const { frontmatter } = post
               return (
-                <Link
-                  to={frontmatter.path}
-                  className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 noUnderline"
-                >
-                  <div className="project">
-                    <div className="projectThumbnail">
-                      <img
-                        src={frontmatter.thumbnail}
-                        alt={frontmatter.title}
-                      />
+                post.id.includes('projects') && (
+                  <Link
+                    to={frontmatter.path}
+                    className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 noUnderline"
+                    key={index}
+                  >
+                    <div className="project">
+                      <div className="projectThumbnail">
+                        <img
+                          src={frontmatter.thumbnail}
+                          alt={frontmatter.title}
+                        />
+                      </div>
+                      <h4>{frontmatter.title}</h4>
+                      <p>{frontmatter.excerpt}</p>
                     </div>
-                    <h4>{frontmatter.title}</h4>
-                    <p>{frontmatter.excerpt}</p>
-                  </div>
-                </Link>
+                  </Link>
+                )
               )
             })}
           </div>
