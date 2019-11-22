@@ -92,17 +92,17 @@ const Team = ({}) => (
     <div className="member">
       <img
         className="member_photo"
-        src="https://itp.nyu.edu/image.php?width=265&image=/people_pics/flash/kanao_k_562625.png"
+        src="https://tisch.nyu.edu/content/dam/tisch/itp/NewsEvents/2018-2019/Koji.jpg.preset.square.jpeg"
         alt="Koji Kanao"
       />
       <div className="member_name">Koji Kanao</div>
       <div className="member_name">koji.kanao@nyu.edu</div>
       <a
-        href="https://sleepy-maker.github.io/web/"
+        href="https://kojikanao.netlify.com"
         target="_blank"
         className="noUnderline member_name"
       >
-        <div className="member_name">sleepy-maker.github.io/web</div>
+        <div className="member_name">kojikanao.netlify.com</div>
       </a>
     </div>
   </div>
